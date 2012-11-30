@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>小牛頓有聲書</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/bg.jpg);
+}
+.icon_sty{width:219px; height:203px; margin-left:30px; margin-top:30px; float:left}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+var p = [0, 666, 999, 1325, 1884, 2421];
+var curP = 0;
+var oldTop = 0;
+$(function(){
+	/*
+	var msg = $('<div></div>');
+	msg.css({
+		  'position': 'fixed',
+		  'top': 0,
+		  'left': 0,
+		  'z-index': 999,
+		  'width': '10%',
+		  'height': '23px'
+	});
+	$('body').append(msg);
+	*/
+	$(document).scroll(function() {
+		//msg.html($(document).scrollTop());
+		var curTop = $(document).scrollTop();
+		if (curTop > oldTop) {
+			if (curTop > p[curP]) {
+				if (curP+1 < p.length) {
+					var newTop = p[++curP];
+					$(document).scrollTop(newTop);
+				}
+			}
+			oldTop = curTop;
+		}
+		else if (curTop < oldTop) {
+			if (curTop < p[curP]) {
+				if (curP-1 >= 0) {
+					var newTop = p[--curP];
+					$(document).scrollTop(newTop);
+				}
+			}
+			oldTop = curTop;
+		}
+	});
+});
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/01_o.png','images/02_o.png','images/03_o.png','images/04_o.png','images/05_o.png','images/06_o.png','images/07_o.png','images/08_o.png','images/09_o.png','images/10_o.png','images/11_o.png','images/12_o.png','images/13_o.png','images/14_o.png','images/15_o.png','images/16_o.png','images/17_o.png','images/18_o.png','images/19_o.png','images/20_o.png','images/21_o.png','images/22_o.png','images/23_o.png','images/24_o.png','images/25_o.png','images/26_o.png','images/27_o.png','images/28_o.png','images/29_o.png','images/30_o.png','images/31_o.png','images/32_o.png','images/33_o.png','images/34_o.png','images/35_o.png','images/36_o.png','images/37_o.png','images/38_o.png','images/39_o.png','images/40_o.png','images/41_o.png','images/42_o.png','images/43_o.png','images/44_o.png','images/45_o.png','images/46_o.png','images/47_o.png','images/48_o.png','images/49_o.png','images/50_o.png')">
+<div style="background-image:url(images/bg.jpg); width:1280px; height:; background-repeat:repeat-y">
+<div align="center"><img src="images/title.png" width="464" height="120" /></div>
+  <div style="width:1280px;">
+  <div style="color:#fff; background-color: #A8753C; font-size:35px; font-weight:bold; font-family:'微軟正黑體', '新細明體'" align="center">主題故事</div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts24')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','images/01_o.png',1)"><img src="images/01.png" name="Image1" width="219" height="203" border="0" id="Image1" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts25')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','images/02_o.png',1)"><img src="images/02.png" name="Image2" width="219" height="203" border="0" id="Image2" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts28')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/03_o.png',1)"><img src="images/03.png" name="Image3" width="219" height="203" border="0" id="Image3" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts29')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/04_o.png',1)"><img src="images/04.png" name="Image4" width="219" height="203" border="0" id="Image4" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt7')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','images/05_o.png',1)"><img src="images/05.png" name="Image5" width="219" height="203" border="0" id="Image5" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt8')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/06_o.png',1)"><img src="images/06.png" name="Image6" width="219" height="203" border="0" id="Image6" /></a></div>
+    
+    
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts26')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','images/07_o.png',1)"><img src="images/07.png" name="Image7" width="219" height="203" border="0" id="Image7" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts27')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','images/08_o.png',1)"><img src="images/08.png" name="Image8" width="219" height="203" border="0" id="Image8" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts22')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','images/09_o.png',1)"><img src="images/09.png" name="Image9" width="219" height="203" border="0" id="Image9" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts23')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','images/10_o.png',1)"><img src="images/10.png" name="Image10" width="219" height="203" border="0" id="Image10" /></a></div>
+  
+  <div style="clear:both; height:50px"></div>
+<div style="color:#fff; background-color: #A8753C; font-size:35px; font-weight:bold; clear:both;font-family:'微軟正黑體', '新細明體'" align="center">自然博物館</div>
+  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt1')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','images/11_o.png',1)"><img src="images/11.png" name="Image11" width="219" height="203" border="0" id="Image11" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt2')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','images/12_o.png',1)"><img src="images/12.png" name="Image12" width="219" height="203" border="0" id="Image12" /></a></div>
+    
+    <div style="clear:both; height:50px"></div>
+  <div style="color:#fff; background-color: #A8753C; font-size:35px; font-weight:bold; clear:both;font-family:'微軟正黑體', '新細明體'" align="center">科學漫畫</div>    
+    
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt10')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','images/13_o.png',1)"><img src="images/13.png" name="Image13" width="219" height="203" border="0" id="Image13" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt11')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','images/14_o.png',1)"><img src="images/14.png" name="Image14" width="219" height="203" border="0" id="Image14" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt9')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','images/15_o.png',1)"><img src="images/15.png" name="Image15" width="219" height="203" border="0" id="Image15" /></a></div>
+  
+  <div style="clear:both; height:50px"></div>
+  <div style="color:#fff; background-color: #A8753C; font-size:35px; font-weight:bold; clear:both;font-family:'微軟正黑體', '新細明體'" align="center">科學繪本</div>
+  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt12')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','images/16_o.png',1)"><img src="images/16.png" name="Image16" width="219" height="203" border="0" id="Image16" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt13')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image17','','images/17_o.png',1)"><img src="images/17.png" name="Image17" width="219" height="203" border="0" id="Image17" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts34')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image18','','images/18_o.png',1)"><img src="images/18.png" name="Image18" width="219" height="203" border="0" id="Image18" /></a></div>
+    
+    
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts35')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','images/19_o.png',1)"><img src="images/19.png" name="Image19" width="219" height="203" border="0" id="Image19" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt14')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','images/20_o.png',1)"><img src="images/20.png" name="Image20" width="219" height="203" border="0" id="Image20" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt15')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','images/21_o.png',1)"><img src="images/21.png" name="Image21" width="219" height="203" border="0" id="Image21" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts30')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','images/22_o.png',1)"><img src="images/22.png" name="Image22" width="219" height="203" border="0" id="Image22" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts31')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23','','images/23_o.png',1)"><img src="images/23.png" name="Image23" width="219" height="203" border="0" id="Image23" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts32')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image24','','images/24_o.png',1)"><img src="images/24.png" name="Image24" width="219" height="203" border="0" id="Image24" /></a></div>
+  
+  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts33')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image25','','images/25_o.png',1)"><img src="images/25.png" name="Image25" width="219" height="203" border="0" id="Image25" /></a></div>
+  
+  <div style="clear:both; height:50px"></div>
+    <div style="color:#fff; background-color: #A8753C; font-size:35px; font-weight:bold; clear:both;font-family:'微軟正黑體', '新細明體'" align="center">動物故事</div>
+  
+  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts2')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image26','','images/26_o.png',1)"><img src="images/26.png" name="Image26" width="219" height="203" border="0" id="Image26" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt6')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image27','','images/27_o.png',1)"><img src="images/27.png" name="Image27" width="219" height="203" border="0" id="Image27" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts7')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image28','','images/28_o.png',1)"><img src="images/28.png" name="Image28" width="219" height="203" border="0" id="Image28" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts14')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image29','','images/29_o.png',1)"><img src="images/29.png" name="Image29" width="219" height="203" border="0" id="Image29" /></a></div>
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts18')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image30','','images/30_o.png',1)"><img src="images/30.png" name="Image30" width="219" height="203" border="0" id="Image30" /></a></div>  
+  
+ 
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts6')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image31','','images/31_o.png',1)"><img src="images/31.png" name="Image31" width="219" height="203" border="0" id="Image31" /></a></div>  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts10')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image32','','images/32_o.png',1)"><img src="images/32.png" name="Image32" width="219" height="203" border="0" id="Image32" /></a></div>  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts20')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image33','','images/33_o.png',1)"><img src="images/33.png" name="Image33" width="219" height="203" border="0" id="Image33" /></a></div>  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts1')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image34','','images/34_o.png',1)"><img src="images/34.png" name="Image34" width="219" height="203" border="0" id="Image34" /></a></div>  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt4')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image35','','images/35_o.png',1)"><img src="images/35.png" name="Image35" width="219" height="203" border="0" id="Image35" /></a></div>  
+  <div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt3')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image36','','images/36_o.png',1)"><img src="images/36.png" name="Image36" width="219" height="203" border="0" id="Image36" /></a></div>
+
+
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts19')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image37','','images/37_o.png',1)"><img src="images/37.png" name="Image37" width="219" height="203" border="0" id="Image37" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts15')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image38','','images/38_o.png',1)"><img src="images/38.png" name="Image38" width="219" height="203" border="0" id="Image38" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts3')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image39','','images/39_o.png',1)"><img src="images/39.png" name="Image39" width="219" height="203" border="0" id="Image39" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts11')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image40','','images/40_o.png',1)"><img src="images/40.png" name="Image40" width="219" height="203" border="0" id="Image40" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nt5')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image41','','images/41_o.png',1)"><img src="images/41.png" name="Image41" width="219" height="203" border="0" id="Image41" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts12')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image42','','images/42_o.png',1)"><img src="images/42.png" name="Image42" width="219" height="203" border="0" id="Image42" /></a></div>
+
+
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts17')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image43','','images/43_o.png',1)"><img src="images/43.png" name="Image43" width="219" height="203" border="0" id="Image43" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts9')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image44','','images/44_o.png',1)"><img src="images/44.png" name="Image44" width="219" height="203" border="0" id="Image44" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts21')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image45','','images/45_o.png',1)"><img src="images/45.png" name="Image45" width="219" height="203" border="0" id="Image45" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts5')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image46','','images/46_o.png',1)"><img src="images/46.png" name="Image46" width="219" height="203" border="0" id="Image46" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts8')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image47','','images/47_o.png',1)"><img src="images/47.png" name="Image47" width="219" height="203" border="0" id="Image47" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts13')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image48','','images/48_o.png',1)"><img src="images/48.png" name="Image48" width="219" height="203" border="0" id="Image48" /></a></div>
+
+
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts4')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image49','','images/49_o.png',1)"><img src="images/49.png" name="Image49" width="219" height="203" border="0" id="Image49" /></a></div>
+<div class=" icon_sty" onClick="alert('appinfo:com.camangi.nts16')"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image50','','images/50_o.png',1)"><img src="images/50.png" name="Image50" width="219" height="203" border="0" id="Image50" /></a></div>
+</div>
+<div style="clear:both; height:40px"></div>
+</div>
+</body>
+</html>
